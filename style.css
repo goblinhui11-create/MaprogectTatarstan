@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(49, 49, 49));
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0e0800;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    color: #ffffff; 
+    padding: 1rem 0;
+    text-align: center;
+}
+nav ul { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    padding-top: 150px;
+}
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.image-placeholder {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #f0f0f0; 
+    overflow: hidden; 
+}
+.image-placeholder img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.gallery-item {
+    border: 1px solid #070707;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.practical-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.practical-info ul li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(82, 76, 73);
+    color: white;
+}
+.Ponelca {
+    list-style: none;
+    padding: 0;
+    margin: 3px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.Ponelca li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 2px;
+    background: rgba(219, 176, 176, 0.233);
+}
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+a:hover {
+    color: inherit; 
+    text-decoration: underline; 
+}
+a:active {
+    color: inherit;
+}
+* {
+  font-family: "Playwrite DE SAS", cursive; 
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+h1 {
+  all: revert; 
+}
+h1 {
+    background: #5e5851;
+    padding: 2px 0;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    font-size: 40px; 
+}
+.container h1 {
+    margin: 2px 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.H10 {
+    font-size: 26px; 
+    margin: 0; 
+}
+header .container { 
+    padding-top: 0;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%; 
+    padding-bottom: 35%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%; 
+        padding-top: 120px;
+    }
+    header {
+        padding: 0.5rem 0;
+    }
+    #H10 {
+        font-size: 22px; 
+    }
+    .Ponelca {
+        flex-direction: column; 
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .Ponelca li {
+        display: block; 
+        margin: 5px 0;
+    }
+    .Ponelca li a {
+        padding: 8px 15px; 
+        display: block; 
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    * {
+        font-size: 16px; 
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .image-placeholder {
+        height: 200px; 
+    }
+    .map-wrapper {
+        padding-bottom: 56.25%; 
+    }
+    .map-container {
+        position: static;
+        width: 100%;
+        height: 300px; 
+    }
+    .map-container iframe {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #H10 {
+        font-size: 18px;
+    }
+    .container {
+        padding-top: 100px; 
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    * {
+        font-size: 14px;
+    }
+    .image-placeholder {
+        height: 150px;
+    }
+}
+* {
+    font-size: 20px;
+}
+h2 {
+    font-size: 32px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#5e5851;
+    box-shadow: 0 2px 5px rgba(14, 17, 53, 0.87);
+    z-index: 1000;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-sizing: border-box; /* Важно для правильного расчета ширины */
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 0.875rem 1rem;
+        font-size: 0.95em;
+    }
+}
+
+/* Для планшетов (768px и меньше) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.75rem 1rem;
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.85em;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 1.25rem 0;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        padding: 1.5rem 0;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+ 
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        padding: 0.5rem 1rem;
+        position: relative; /* Или fixed в зависимости от дизайна */
+    }
+}
+.image-placeholder {
+    height: 700px; /* Здесь задана фиксированная высота */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #f0f0f0; 
+    overflow: hidden; 
+}
+@media (max-width: 768px) {
+    /* ... другие стили ... */
+    .image-placeholder {
+        height: 300px; /* Возможно, здесь тоже нужно увеличить */ 
+    }
+}
+
+@media (max-width: 480px) {
+    /* ... другие стили ... */
+    .image-placeholder {
+        height: 200px; /* И здесь! */
+    }
+}
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* <-- Это вызывает белые отступы */
+    display: block; 
+}
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Убедитесь, что здесь 'cover', чтобы не было отступов */
+}
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение заполнит контейнер, обрезая лишнее, но без отступов */
+    display: block; 
+}
